@@ -36,7 +36,7 @@ class Main extends Component {
             return (
                 <CampsiteInfo 
                     campsite={this.props.campsites.filter(campsite => campsite.id === +match.params.campsiteId)[0]}
-                    comments={this.props.comments.filter(comment => comment.id === +match.params.campsiteId)}
+                    comments={this.props.comments.filter(comment => comment.campsiteId === +match.params.campsiteId)}
                 />
             );
         }
